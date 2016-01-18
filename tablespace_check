@@ -1,6 +1,6 @@
 #!/bin/bash
 ###############################################################################################
-############## tablespaces.sh 01.18.2016, Arkadiusz Karol Borucki
+############## tablespaces.sh 18.01.2016, Arkadiusz Karol Borucki
 ############## script is checking Oracle tablespaces and returns three valuse - 0, 1, 2
 ############## 0 - normal
 ############## 1 - warning
