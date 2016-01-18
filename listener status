@@ -8,7 +8,7 @@
 #######################################################################
 
 DBA="aborucki@xxxxx"
-ORACLE_SID="ALMA"
+ORACLE_SID="A"
  ORACLE_HOME="/Oracle/app/oracle/product/db11g"
 
 c=`ps -ef | grep tnslsnr | grep -v grep | wc -l`
