@@ -1,0 +1,21 @@
+#!/bin/bash
+#######################################################################
+########### Arkadiusz Borucki
+########### ora_tns.sh - script is checking listener status
+########### returns 0 and 1
+########### 0 - normal
+########### 1 - critical
+#######################################################################
+
+DBA="aborucki@xxxxx"
+ORACLE_SID="ALMA"
+ ORACLE_HOME="/Oracle/app/oracle/product/db11g"
+
+c=`ps -ef | grep tnslsnr | grep -v grep | wc -l`
+echo $c
+
+if [ $c -eq 0 ];then
+echo "tnslsnr down"
+return 1
+exit
+fi
